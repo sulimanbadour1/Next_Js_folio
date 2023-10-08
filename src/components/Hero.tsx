@@ -37,7 +37,7 @@ function Hero({}: Props) {
           Suliman Badour
         </h2>
         <h1 className="text-3xl lg:text-5xl font-semibold px-10">
-          <span className="mr-3 text-xl ">{text}</span>
+          <span className="mr-3 text-4xl mt-2">{text}</span>
           <Cursor cursorColor="#fff" />
         </h1>
         <div className="pt-8 ">
