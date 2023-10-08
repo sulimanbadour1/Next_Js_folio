@@ -2,4 +2,4 @@
 
 ### Next Js Folio
 
-<img src="" width="auto"/>
+<img src="https://github.com/sulimanbadour1/Next_Js_folio/blob/main/public/MockUp/site.gif?raw=true" width="auto"/>
