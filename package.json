@@ -10,15 +10,21 @@
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
+    "maath": "^0.10.4",
     "next": "13.5.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-social-icons": "^6.4.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-simple-typewriter": "^5.0.1",
+    "react-social-icons": "^6.4.0",
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
+    "tilt": "^0.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-vertical-timeline-component": "^3.3.4",
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
