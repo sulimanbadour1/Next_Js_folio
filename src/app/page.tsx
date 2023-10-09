@@ -1,13 +1,15 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import Projects1 from "@/components/Projects1";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-[#151030] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div className="bg-[#050816] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Header />
       <section id="hero" className="snap-proximity">
         <Hero />
@@ -21,6 +23,15 @@ export default function Home() {
 
       <section id="skills" className="snap-proximity mt-5">
         <Skills />
+      </section>
+      <section id="projects" className="snap-proximity mt-5">
+        <Projects />
+      </section>
+      <section id="projects1" className="snap-proximity mt-5">
+        <Projects1 />
+      </section>
+      <section id="contact" className="snap-proximity mt-5">
+        <Contact />
       </section>
     </div>
   );

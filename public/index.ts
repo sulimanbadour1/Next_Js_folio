@@ -13,10 +13,40 @@ import Git from './tech/git.png';
 import HtmlIcon from './tech/html.png';
 import CssIcon from './tech/css.png';
 import BootIcon from "./tech/bootstrap.png";
-
-
+import ThreeJs from "./tech/threejs.png";
+import docker from './tech/docker.png'
+import nodeJs from "./tech/nodejs.png";
+import NextJs from './tech//nextjs.png';
+import blender from "./tech/blender.png"
+import photoshop from "./tech/photoshop.png";
+//Folio 
+import littlelemon from './folio/lemon.png';
+import shirt from "./folio/shirt.png"
+import mosaic from "./folio/mosaic.png"
+import NorthFace from './folio/northface.png'
+import betteraskpdf from './folio/logo-black.png'
+import folio from "./folio/threefolio.png";
+// 3d models
+import tenso from './folio/tenso.jpg'
+import tripteron from './folio/triptron.png'
 //Export 
+
 export {
+    tripteron,
+    tenso,
+    folio,
+    betteraskpdf,
+    NorthFace,
+    mosaic,
+    shirt,
+    littlelemon,
+
+    photoshop,
+    blender,
+    NextJs,
+    nodeJs,
+    docker,
+    ThreeJs,
     BootIcon,
     CssIcon,
     HtmlIcon,

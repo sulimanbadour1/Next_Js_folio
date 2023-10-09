@@ -5,11 +5,11 @@
 
 /* Define CSS variables as custom properties */
 :root {
-  --small: screen and (min-width: 20em);
-  --medium: screen and (min-width: 38em);
-  --large: screen and (min-width: 48em);
-  --extra-large: screen and (min-width: 58em);
-  --max: screen and (min-width: 69em);
+  --small: screen and (min-width: 18em);
+  --medium: screen and (min-width: 32em);
+  --large: screen and (min-width: 40em);
+  --extra-large: screen and (min-width: 50em);
+  --max: screen and (min-width: 60em);
   --black: #bbbcbd;
   --white: #f8f8f8;
   --grey-light: #e8ebf0;
@@ -23,18 +23,18 @@ body {
 }
 
 .container {
-  margin: 2em auto;
+  margin: 1em auto;
 }
 
 /* Styles for .service-graphic */
 .service-graphic {
-  font-size: 8px;
-  padding: 1em;
+  font-size: 6px;
+  padding: 2em;
   position: relative;
 }
 
 .service-graphic .monitor {
-  width: 28.750em;
+  width: 25em;
   height: 17.5em;
   position: relative;
   background: var(--white);
@@ -69,7 +69,7 @@ body {
 .screen:after {
   width: 0.500em;
   height: 0.500em;
-  border-radius: 0.500em;
+  border-radius: 0.100em;
   margin: 0 0 -0.250em -0.250em;
   background: var(--white);
   bottom: -0.625em;

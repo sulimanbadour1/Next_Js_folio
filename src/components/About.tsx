@@ -14,9 +14,10 @@ function About({}: Props) {
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row
     max-w-6xl  px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[8px] text-gray-400 text-2xl p-6">
+      <h3 className="absolute top-20 uppercase tracking-[8px] text-gray-200 text-3xl p-8">
         About.
       </h3>
+
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -24,8 +25,8 @@ function About({}: Props) {
         transition={{
           duration: 1.2,
         }}
-        className="-mb-28 md:mb-0 flex-shrink-0 w-50 h-50 rounded-full object-cover
-        shadow-2xl"
+        className="md:mb-0 flex-shrink-0 w-50 h-50 rounded-full object-cover
+        shadow-2xl pt-10 -pb-12 top-50"
       >
         <Card />
       </motion.div>
@@ -36,7 +37,7 @@ function About({}: Props) {
         viewport={{ once: false }}
         className="space-y-10 px-0 "
       >
-        <h4 className="text-4xl font-semibold sm:pl-0 md:pl-20">
+        <h4 className="text-3xl font-semibold sm:pl-0 md:pl-20">
           A <span className="underline decoration-[#6b5ec9]">Little</span> about
           me.
         </h4>

@@ -51,7 +51,7 @@ function Header({}: Props) {
         className={`
         fixed
         sm:px-16 px-6
-        w-full flex items-center py-4 top-0 z-50 bg-[#151030] 
+        w-full flex items-center py-4 top-0 z-50 bg-[#050816] 
          shadow-black/[0.05]
         `}
       >
@@ -123,7 +123,7 @@ function Header({}: Props) {
                       active === link.title
                         ? "text-[#60449e]"
                         : "text-[#aaa6c3]"
-                    } hover:text-white text-[16px] font-bold cursor-pointer `}
+                    } hover:text-white text-[18px] font-bold cursor-pointer `}
                     onClick={() => {
                       setActive(link.title);
                     }}
