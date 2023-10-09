@@ -7,55 +7,44 @@ import { motion } from "framer-motion";
 import Bobcat from "../../public/company/bobcat.png";
 import Image from "next/image";
 
-type Props = {};
-
-const ExperienceCard: React.FC<Props> = () => {
+export default function ExperienceCard() {
   return (
     <article
-      className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px]
-    md:w-[600px] xl:w-[900px] snap-center bg-[#3330474e] p-10 hover:opacity-100 opacity-40
-    cursor-pointer transition-opacity duration-200 overflow-hidden"
+      className="flex flex-col rounded-lg items-center space-y-7
+    flex-shrink-0 w-[400px] md:w=[700px] xl:w[800px] snap-center
+    bg-[#36344328] p-6 hover:opacity-90 opacity-40 cursor-pointer transition-opacity duration-200
+    overflow-hidden"
     >
-      <motion.img
-        initial={{
-          y: -100,
-          opacity: 0,
-        }}
-        transition={{ duration: 1.1 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        className="w-24 h-24 rounded-full p-2 xl:w-[200px] xl:h-[200px] object-cover object-center justify-center"
-        src={Bobcat.src}
-        alt="bobcatlogo"
+      <Image
+        src={Bobcat}
+        alt="bobcat"
+        className="w-20 h-20 rounded-full  xl:w-[100px] xl:h-[100px]
+        object-cover object-top"
       />
-      <div className="px-0 md:px-10 pt-6">
-        <h4 className="text-2xl font-light">CEO</h4>
-        <p className="font-bold text-xl mt-1">Bobcat</p>
+      <div className="px-0 md:px-10">
+        <h4 className="text-1xl font-light">UI/UX Designer</h4>
+        <p className="font-bold text-1xl mt-1">Kazan Express</p>
         <div className="flex space-x-2 my-2">
-          <Image
-            src={bobcat}
-            alt="bobcatlogo"
-            className="w-8 h-8 rounded-full  object-center"
-          />
-          <Image
-            src={bobcat}
-            alt="bobcatlogo"
-            className="w-8 h-8 rounded-full  object-center"
-          />
-          <Image
-            src={bobcat}
-            alt="bobcatlogo"
-            className="w-8 h-8 rounded-full  object-center"
-          />
+          <Image src={Bobcat} alt="bobcat" className="w-8 h-8 rounded-full" />
+          <Image src={Bobcat} alt="bobcat" className="w-8 h-8  rounded-full" />
+          <Image src={Bobcat} alt="bobcat" className="w-8 h-8  rounded-full" />
         </div>
-        <p className="uppercase py-5 text-gray-400 text-base">Dates</p>
-        <ul className="list-disc space-y-4 ml-5 text-lg ">
-          <li className="text-sm">Point</li>
-          <li className="text-sm">Point</li>
+        <p className="uppercase my-5 text-gray-300">Mar 2020 - Dec 2020</p>
+        <ul className="list-disc space-y-2 ml-5 mr-4 text-sm">
+          <li>
+            Executed Visual redesign of web applications and marketing for +20
+            new product categories (Shoes, plus-size).
+          </li>
+          <li>
+            Designed posters and various social media content for multiple
+            clients.
+          </li>
+          <li>
+            Implemented responsive design and ensuring cross-browser
+            compatibility.
+          </li>
         </ul>
       </div>
     </article>
   );
-};
-
-export default ExperienceCard;
+}

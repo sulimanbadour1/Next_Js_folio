@@ -14,7 +14,7 @@ export default function Home() {
       <section id="about" className="snap-proximity">
         <About />
       </section>
-      <section id="experience" className="snap-proximity">
+      <section id="experience" className="snap-proximity mt-5">
         <WorkExperience />
       </section>
     </div>

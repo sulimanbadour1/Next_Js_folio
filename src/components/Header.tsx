@@ -46,13 +46,14 @@ function Header({}: Props) {
   }, []);
 
   return (
-    <header>
+    <header className="z-[999] relative">
       <nav
         className={`
+        fixed
         sm:px-16 px-6
-        w-full flex items-center py-4 top-0 z-50 ${
-          scrolled ? "bg-[#161134]" : "bg-transparent"
-        }`}
+        w-full flex items-center py-4 top-0 z-50 bg-[#151030] 
+         shadow-black/[0.05]
+        `}
       >
         <motion.div
           initial={{ x: -500, opacity: 0, scale: 0.5 }}
@@ -107,7 +108,7 @@ function Header({}: Props) {
               <Image
                 src={Logo}
                 alt="Suliman Logo"
-                className="w-24 h-24 object-contain"
+                className="w-20 h-20 object-contain"
               />
             </div>
           </Link>
