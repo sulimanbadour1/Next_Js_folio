@@ -14,8 +14,8 @@ function About({}: Props) {
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row
     max-w-6xl  px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-400 text-2xl p-6">
-        About
+      <h3 className="absolute top-24 uppercase tracking-[8px] text-gray-400 text-2xl p-6">
+        About.
       </h3>
       <motion.div
         initial={{ x: -100, opacity: 0 }}
