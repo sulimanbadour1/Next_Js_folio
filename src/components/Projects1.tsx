@@ -24,7 +24,10 @@ const projects1: Project1[] = [
 ];
 function Projects({}: Props) {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
       className="flex relative flex-col text-center mx-auto   md:text-left xl:flex-col  max-w-[2000px]
   xl:px-10 min-h-screen justify-center items-center xl:space-y-0 md:pb-12"
     >
@@ -42,7 +45,7 @@ function Projects({}: Props) {
           <ProjectsCard1 key={`projects-${index}`} projects={project} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

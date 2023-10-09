@@ -61,9 +61,8 @@ function Projects({}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      exit={{ opacity: 0 }}
       className="flex relative flex-col text-center mx-auto   md:text-left xl:flex-col  max-w-[2000px]
   xl:px-10 min-h-screen justify-center items-center xl:space-y-0 md:pb-12"
     >
