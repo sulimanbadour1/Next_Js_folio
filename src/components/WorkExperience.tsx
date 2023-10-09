@@ -13,10 +13,10 @@ function WorkExperience({}: Props) {
       className="h-screen flex relative overflow-hidden flex-col text-left
     md:flex-row max-w-6xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-xl z-[999]">
+      <h3 className="absolute top-32 uppercase tracking-[10px] text-gray-500 text-2xl">
         Experience
       </h3>
-      <div className="w-full flex space-x-2 overflow-x-scroll pt-10 snap-x snap-mandatory md:mt-12 ">
+      <div className="w-full flex space-x-2 overflow-x-scroll pt-10 snap-x snap-mandatory  ">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
