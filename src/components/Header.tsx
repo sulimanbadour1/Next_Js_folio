@@ -7,6 +7,7 @@ import menu from "../../public/assets/menu.svg";
 import close from "../../public/assets/close.svg";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { linkedin, email, github, behance, dribble } from "../../public";
 
 type Props = {};
 
@@ -25,49 +26,94 @@ function Header({}: Props) {
       title: "Contact",
     },
   ];
+  const socialLinks = [
+    {
+      name: "Email",
+      icon: email,
+      link: "mailto:suliman.badour1@gmail.com",
+    },
+    {
+      name: "Behance",
+      icon: behance,
+      link: "mailto:suliman.badour1@gmail.com",
+    },
+    {
+      name: "Dribbble",
+      icon: dribble,
+      link: "mailto:suliman.badour1@gmail.com",
+    },
+    {
+      name: "github",
+      icon: github,
+      link: "https://github.com/sulimanbadour1",
+    },
+    {
+      name: "linkedin",
+      icon: linkedin,
+      link: "https://www.linkedin.com/in/sulimanbadour/",
+    },
+  ];
 
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.scrollY;
+  //     if (scrollTop > 50) {
+  //       setScrolled(true);
+  //     } else {
+  //       setScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
-    <header className="z-[999] relative">
+    <header className="z-[999] ">
       <nav
-        className={`
-        
-        sm:px-16 px-6
-        w-full flex items-center py-4 top-0 z-50 bg-[#050816] 
-         shadow-black/[0.05]
+        className={`sm:px-16 px-6 w-full flex items-center py-4 top-0 z-50 bg-transparent 
+         shadow-black/[0.05]  
         `}
       >
         <motion.div
           initial={{ x: -500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 2.5, type: "spring", stiffness: 100 }}
-          className="w-full flex justify-between items-center max-w-7xl mx-auto"
+          className="w-full flex justify-between items-center max-w-7xl mx-auto "
         >
           {/* Social Icons */}
           <div className=" hidden md:flex flex-row items-center">
-            <SocialIcon
+            <ul className="hidden sm:flex flex-row gap-4">
+              {socialLinks.map((item) => (
+                <li
+                  key={item.name}
+                  className="h-8 w-8 cursor-pointer"
+                  onClick={() => {
+                    setActive(item.link);
+                  }}
+                >
+                  <a
+                    href={item.link}
+                    target={item.link}
+                    rel="noopener noreferrer"
+                  >
+                    <Image src={item.icon} alt={item.name} />
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            {/* <SocialIcon
               url="https://github.com/sulimanbadour1"
               bgColor="transparent"
               fgColor="white"
               network="github"
+              rel="noopener noreferrer"
             />
             <SocialIcon
               className="cursor-pointer"
@@ -75,29 +121,33 @@ function Header({}: Props) {
               fgColor="white"
               network="email"
               url="mailto:suliman.badour1@gmail.com"
+              rel="noopener noreferrer"
             />
             <SocialIcon
               url="https://www.linkedin.com/in/sulimanbadour/"
               bgColor="transparent"
               fgColor="white"
               network="linkedin"
+              rel="noopener noreferrer"
             />
             <SocialIcon
               url="https://dribbble.com/SulimanBadour/"
               bgColor="transparent"
               fgColor="white"
               network="dribbble"
+              rel="noopener noreferrer"
             />
             <SocialIcon
               url="https://www.behance.net/sulimanbadour"
               bgColor="transparent"
               fgColor="white"
               network="behance"
-            />
+              rel="noopener noreferrer"
+            /> */}
           </div>
           {/* LOGO */}
           <Link
-            href="#hero"
+            href="#header"
             className="cursor-pointer"
             onClick={() => {
               setActive("");

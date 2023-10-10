@@ -110,10 +110,10 @@ function Skills({}: Props) {
       className="flex relative flex-col text-center mx-auto   md:text-left xl:flex-row max-w-[2000px]
   xl:px-10 min-h-screen justify-center items-center xl:space-y-0 md:pb-12"
     >
-      <h3 className="absolute top-32 uppercase tracking-[8px] text-gray-200 text-3xl md:pb-12">
+      <h3 className="absolute top-8 uppercase tracking-[8px] text-gray-200 text-3xl md:pb-12">
         Skills.
       </h3>
-      <h3 className="absolute pt-8 top-36 uppercase tracking-[3px] text-gray-200 text-sm">
+      <h3 className="absolute pt-8 top-16 uppercase tracking-[3px] text-gray-200 text-sm">
         My Tech stack.
       </h3>
       <div className="m-8 grid grid-cols-6 gap-5 ">

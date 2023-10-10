@@ -86,13 +86,17 @@ function WorkExperience({}: Props) {
       className="h-screen flex relative overflow-hidden flex-col text-left
     md:flex-row max-w-6xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-32 uppercase tracking-[8px] text-gray-200 text-3xl">
+      <h3 className="absolute top-32 text-xl uppercase tracking-[8px] text-gray-200 md:text-3xl">
         Work Experience.
       </h3>
       {/* <h3 className="absolute pt-12 top-36 uppercase tracking-[3px] text-gray-200 text-sm md:pb-4 flex flex-row items-center justify-center">
         Where I've worked so far.
       </h3> */}
-      <div className="w-full flex space-x-2 overflow-x-scroll pt-20 snap-x snap-mandatory ">
+      <div
+        className="w-full flex space-x-2 overflow-x-scroll pt-20 snap-x snap-mandatory
+      scrollbar
+      scrollbar-track-gray-300 scrollbar-thumb-[#5d509f] "
+      >
         {experiences.map((experience, index) => (
           <ExperienceCard key={`experience-${index}`} experience={experience} />
         ))}

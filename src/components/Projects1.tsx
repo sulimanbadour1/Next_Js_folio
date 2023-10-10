@@ -34,7 +34,9 @@ function Projects({}: Props) {
       <h3 className="absolute top-32 uppercase tracking-[8px] text-gray-200 text-3xl md:pb-12">
         My 3D Projects.
       </h3>
-
+      <h3 className="absolute pt-12 top-36 uppercase tracking-[3px] text-gray-200 text-sm">
+        Design Engineer
+      </h3>
       <p className="relative text-base top-40 sm:pl-0 md:pl-20 max-w-6xl p-16 text-gray-200 ">
         I have worked as a Design Engineer in the field of 3D Printing, CAD/CAE
         and Robotics, and have designed and developed various 3D models and

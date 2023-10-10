@@ -14,7 +14,7 @@ function About({}: Props) {
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row
     max-w-6xl  px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-20 uppercase tracking-[8px] text-gray-200 text-3xl p-8">
+      <h3 className="absolute top-12 uppercase tracking-[8px] text-gray-200 text-3xl p-8">
         About.
       </h3>
 

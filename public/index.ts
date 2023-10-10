@@ -29,9 +29,27 @@ import folio from "./folio/threefolio.png";
 // 3d models
 import tenso from './folio/tenso.jpg'
 import tripteron from './folio/triptron.png'
+// Badges
+import metacredly from './badges/metacredly.png';
+import credly from './badges/credly1.png'
+import metaback from './badges/metacredlyback.png'
+// Nav icons
+import email from "./navbarlogos/email.png";
+import github from "./navbarlogos/github.png"
+import linkedin from "./navbarlogos/linkedin.png"
+import behance from "./navbarlogos/behance.png"
+import dribble from "./navbarlogos//dribbble.png"
 //Export 
 
 export {
+    behance,
+    dribble,
+    email,
+    github,
+    linkedin,
+    metaback,
+    metacredly,
+    credly,
     tripteron,
     tenso,
     folio,

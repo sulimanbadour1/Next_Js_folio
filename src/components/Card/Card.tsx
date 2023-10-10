@@ -5,7 +5,7 @@ type Props = {};
 
 function Card({}: Props) {
   return (
-    <div className="container service-graphic sg2">
+    <div className="container service-graphic sg2 pr-4 pl-4">
       <div className="screen monitor">
         <div className="content">
           <div className="browser">

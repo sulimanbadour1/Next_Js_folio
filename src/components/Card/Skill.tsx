@@ -25,8 +25,8 @@ const SkillsCard: React.FC<SkillsCardProps> = ({ skills }) => {
         md:w-18 md:h-18 xl:w-20 xl:h-20"
       />
       <div
-        className="absolute opacity-0 group-hover:opacity-80 transition duration-200 
-        ease-in-out group-hover:bg-gray-300 w-14 h-14 rounded-full z-0
+        className=" w-14 h-14 absolute opacity-0 group-hover:opacity-80 transition duration-200 
+        ease-in-out group-hover:bg-gray-300 rounded-full z-0
         md:w-18 md:h-18 xl:w-20 xl:h-20"
       >
         <div className="flex items-center justify-center h-full">
