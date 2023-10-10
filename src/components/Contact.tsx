@@ -50,6 +50,7 @@ export default function Contact({}: Props) {
       });
     document.querySelector("form")?.reset();
   };
+  if (errors.name) toast.error(FormData.name + " " + errors.name.message);
 
   return (
     <div
@@ -76,7 +77,7 @@ export default function Contact({}: Props) {
               {...register("name", {
                 required: "Name is required",
                 minLength: {
-                  value: 5,
+                  value: 2,
                   message: "Name must be at least 5 characters long",
                 },
               })}
