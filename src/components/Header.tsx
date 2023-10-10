@@ -49,7 +49,7 @@ function Header({}: Props) {
     <header className="z-[999] relative">
       <nav
         className={`
-        fixed
+        
         sm:px-16 px-6
         w-full flex items-center py-4 top-0 z-50 bg-[#050816] 
          shadow-black/[0.05]
@@ -120,10 +120,8 @@ function Header({}: Props) {
                   <li
                     key={link.id}
                     className={`${
-                      active === link.title
-                        ? "text-[#60449e]"
-                        : "text-[#aaa6c3]"
-                    } hover:text-white text-[18px] font-bold cursor-pointer `}
+                      active === link.title ? "text-white" : "text-[#aaa6c3]"
+                    } hover:text-white text-[14px] font-bold cursor-pointer `}
                     onClick={() => {
                       setActive(link.title);
                     }}

@@ -23,6 +23,34 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.contactInput{
+  @apply outline-none bg-[#7c7c7c28] rounded-sm border-b px-6 py-4 
+  border-[#52515128]  text-gray-200 transition-all
+  focus:border-[#efefef] focus:text-[#efefef] 
+   hover:border-[#fff] hover:text-[#fff] w-full
+   placeholder-zinc-400 placeholder-opacity-50
+   
+}
+
+.error-popup {
+  position: absolute;
+  bottom: 200px; /* Adjust this value as needed */
+  left: 0;
+  right: 0;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.relative:hover .error-popup {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
