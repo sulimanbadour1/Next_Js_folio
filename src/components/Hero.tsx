@@ -40,7 +40,7 @@ function Hero({}: Props) {
           <span className="mr-3 text-xl mt-2 md:text-4xl">{text}</span>
           <Cursor cursorColor="#fff" />
         </h1>
-        <div className="pt-8 ">
+        <div className="pt-8 pb-36 ">
           <Link href="#about">
             <button className="heroButton mr-2"> About</button>
           </Link>
@@ -54,24 +54,6 @@ function Hero({}: Props) {
             <button className="heroButton  ">Projects</button>
           </Link>
         </div>
-        {/* // Scrolling down */}
-        {/* <div className=" w-full flex justify-center items-center pt-6">
-          <a href="#about">
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 dark:border-white">
-              <motion.div
-                animate={{
-                  y: [0, 24, 0],
-                }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                }}
-                className="w-3 h-3 rounded-full bg-white mb-4 "
-              />
-            </div>
-          </a>
-        </div> */}
       </div>
     </div>
   );
