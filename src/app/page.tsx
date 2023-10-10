@@ -9,7 +9,11 @@ import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
-    <div className="bg-[#050816] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div
+      className="bg-[#050816] text-white h-screen snap-y snap-mandatory 
+    overflow-y-scroll overflow-x-hidden z-0 scrollbar
+  scrollbar-track-gray-300 scrollbar-thumb-[#5d509f]"
+    >
       <Header />
       <section id="hero" className="snap-proximity">
         <Hero />

@@ -32,24 +32,7 @@
    
 }
 
-.error-popup {
-  position: absolute;
-  bottom: 200px; /* Adjust this value as needed */
-  left: 0;
-  right: 0;
-  background-color: #ff0000;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  opacity: 0;
-  transform: translateY(-40px);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
 
-.relative:hover .error-popup {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 
 

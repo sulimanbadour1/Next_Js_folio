@@ -50,7 +50,8 @@ export default function Contact({}: Props) {
       });
     document.querySelector("form")?.reset();
   };
-  if (errors.name) toast.error(FormData.name + " " + errors.name.message);
+  if (errors.name) toast.error("Name is required");
+  if (errors.email) toast.error("invalid email address");
 
   return (
     <div
@@ -75,14 +76,13 @@ export default function Contact({}: Props) {
               type="text"
               placeholder="Name"
               {...register("name", {
-                required: "Name is required",
+                required: true,
                 minLength: {
                   value: 2,
                   message: "Name must be at least 5 characters long",
                 },
               })}
             />
-            {/* {toast.error("Name is required")} */}
             <input
               className="contactInput"
               type="email"
