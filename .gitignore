@@ -5,7 +5,8 @@
 /.pnp
 .pnp.js
 .env
-Contact.tsx*
+Contact.tsx
+
 
 # testing
 /coverage
