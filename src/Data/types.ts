@@ -3,7 +3,7 @@ import kazanexpress from "../../public/company/kazanexpress.png";
 import provectus from "../../public/company/provectus.png";
 import inno from "../../public/company/innopolis.png";
 import bobcat from "../../public/company/bobcat.png";
-import { expo } from "maath/dist/declarations/src/easing";
+
 // types.ts
 export interface Experience {
     title: string;
