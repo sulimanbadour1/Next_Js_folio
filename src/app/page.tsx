@@ -60,7 +60,6 @@ export default function Home() {
             </div>
           </div>
         </footer>
-        {/* <StarsCanvas /> */}
       </Link>
       <section className="snap-proximity -mt-8">
         <Footer />
